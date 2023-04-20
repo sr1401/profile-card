@@ -1,0 +1,107 @@
+:root {
+    --Dark--cyan: hsl(185, 75%, 39%);
+    --Very--dark--desaturated--blue: hsl(229, 23%, 23%);
+    --Dark--grayish--blue: hsl(227, 10%, 46%);
+    --Dark--gray: hsla(0, 0%, 59%, 0.3);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: var(--Dark--cyan);
+    background-image: url(./images/bg-pattern-top.svg) , url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 50vw bottom 40vh, left 59vw top 48vh;
+    background-size: 125vh;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 350px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.card__bg {
+    background-image: url(./images/bg-pattern-card.svg);
+    border-radius: 15px 15px 0 0;
+    height: 140px;
+}
+
+.card__avatar {
+    position: relative;
+}
+
+.card__avatar__img {
+    position: absolute;
+    left: 50%;
+}
+
+.card__avatar img {
+    margin-top: -50%;
+    margin-left: -50%;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.card__info {
+    margin-top: 73px;
+    text-align: center;
+}
+
+.card__info__name {
+    font-size: 1.125em;
+    font-weight: 600;
+    color: var(--Very--dark--desaturated--blue);
+    margin-bottom: 5px;
+}
+
+.card__info__name span {
+    color: var(--Dark--grayish--blue);
+    font-weight: 400;
+}
+
+.card__info__address {
+    color: var(--Dark--grayish--blue);
+    font-size: 0.875em;
+}
+
+.card__bottom {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    border-top: 1px solid var(--Dark--gray);
+    padding: 30px 0;
+}
+
+.info__detail {
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.detail__number {
+    font-weight: 700;
+    font-size: 1.125em;
+    color: var(--Very--dark--desaturated--blue);
+}
+
+.detail__name {
+    font-size: 0.6875em;
+    color: var(--Dark--grayish--blue);
+    margin-top: 5px;
+}
